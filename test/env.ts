@@ -1,4 +1,4 @@
 import { config } from 'dotenv'
 
 config()
-export let { spreadsheet_id, email } = process.env
+export let { spreadsheet_id, client_email } = process.env

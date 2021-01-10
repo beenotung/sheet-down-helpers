@@ -14,7 +14,7 @@ describe('sheet-db TestSuit', () => {
     }
     db = loadSheetTables({
       auth: {
-        email: config.email,
+        client_email: config.client_email,
         private_key: config.private_key,
       },
       meta: config.sheetMeta,

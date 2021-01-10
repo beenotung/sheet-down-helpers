@@ -4,14 +4,14 @@ import { CellDOWN, CellLevelUp, RowDOWN, RowLevelUp } from 'sheet-down'
 import { SheetMeta } from './sheet-meta'
 
 export interface SheetAuth {
-  email: string
+  client_email: string
   private_key: string
 }
 
 export const scopes = ['https://spreadsheets.google.com/feeds']
 
 export function toToken(auth: SheetAuth) {
-  return new Token(auth.email, auth.private_key, scopes)
+  return new Token(auth.client_email, auth.private_key, scopes)
 }
 
 export function toLocation(args: {

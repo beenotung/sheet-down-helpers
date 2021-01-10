@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from 'fs'
+import { getFullFeedXMLUrl } from '../src/helpers'
 import { parseSheetMeta, SheetMeta } from '../src/sheet-meta'
-import { email, spreadsheet_id } from './env'
+import { client_email, spreadsheet_id } from './env'
 
 export async function loadConfig() {
   let invalidSettingsMessage: string | false = false
@@ -14,7 +15,7 @@ export async function loadConfig() {
   }
   private_key = readFileSync(keyFile).toString()
 
-  if (!email) {
+  if (!client_email) {
     invalidSettingsMessage = `Missing "email" in env.`
     return { invalidSettingsMessage }
   }
@@ -26,7 +27,7 @@ export async function loadConfig() {
 
   const sheetMetaFile = 'full.xml'
   if (!existsSync(sheetMetaFile)) {
-    const url = `https://spreadsheets.google.com/feeds/worksheets/${spreadsheet_id}/private/full`
+    const url = getFullFeedXMLUrl(spreadsheet_id)
     // TODO add some instruction on how to save / paste the result
     invalidSettingsMessage = `<a href="${url}">load spreadsheet meta data</a>`
     return { invalidSettingsMessage }
@@ -43,6 +44,6 @@ export async function loadConfig() {
     invalidSettingsMessage: false,
     private_key,
     sheetMeta,
-    email,
+    client_email,
   }
 }
