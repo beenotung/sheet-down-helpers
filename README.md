@@ -1,6 +1,6 @@
 # sheet-down-helpers
 
-TODO: add desc
+Typescript wrapper of [sheet-down](https://github.com/jed/sheet-down), with some additional helper functions and classes.
 
 [![npm Package Version](https://img.shields.io/npm/v/sheet-down-helpers.svg?maxAge=3600)](https://www.npmjs.com/package/sheet-down-helpers)
 

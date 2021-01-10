@@ -1,13 +1,9 @@
 {
   "name": "sheet-down-helpers",
-  "version": "1.0.0",
-  "description": "TODO: add desc",
+  "version": "0.0.0",
+  "description": "Typescript wrapper of sheet-down, with some additional helper functions and classes",
   "keywords": [],
-  "author": {
-    "name": "Beeno Tung",
-    "email": "aabbcc1241@yahoo.com.hk",
-    "url": "https://beeno-tung.surge.sh"
-  },
+  "author": "Beeno Tung <aabbcc1241@yahoo.com.hk> (https://beeno-tung.surge.sh)",
   "license": "BSD-2-Clause",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -31,10 +27,9 @@
       "pre-commit": "npm run format"
     }
   },
-  "directories": {
-    "test": "test"
-  },
   "files": [
+    "src",
+    "example",
     "dist"
   ],
   "dependencies": {
@@ -70,5 +65,13 @@
     "tslint-eslint-rules": "^5.4.0",
     "tslint-etc": "^1.13.9",
     "typescript": "^4.1.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/sheet-down-helpers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beenotung/sheet-down-helpers/issues"
+  },
+  "homepage": "https://github.com/beenotung/sheet-down-helpers#readme"
 }
