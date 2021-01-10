@@ -6,6 +6,10 @@ pnpm-debug.log
 dist/
 .cache/
 *.tgz
-.env
 .nyc_output
 coverage/
+
+# config files
+.env
+full.xml
+key.pem
