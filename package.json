@@ -1,6 +1,6 @@
 {
   "name": "sheet-down-helpers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Typescript wrapper of sheet-down, with some additional helper functions and classes",
   "keywords": [],
   "author": "Beeno Tung <aabbcc1241@yahoo.com.hk> (https://beeno-tung.surge.sh)",
