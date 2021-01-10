@@ -43,3 +43,7 @@ export async function example() {
 Details see the spec files:
 - [sheet-db.spec.ts](./test/sheet-db.spec.ts)
 - [sheet-meta.spec.ts](./test/sheet-meta.spec.ts)
+
+
+## License
+[BSD-2-Clause](./LICENSE) (Free Open Sourced Project)
