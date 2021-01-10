@@ -1,11 +1,3 @@
-# sheet-down-helpers
-
-TODO: add desc
-
-[![npm Package Version](https://img.shields.io/npm/v/sheet-down-helpers.svg?maxAge=3600)](https://www.npmjs.com/package/sheet-down-helpers)
-
-# Usage Example
-```typescript
 import { readFileSync } from 'fs'
 import { loadSheetTables, parseSheetMeta, wait } from 'sheet-down-helpers'
 
@@ -37,9 +29,3 @@ export async function example() {
   let user = await db.User.getRow({ row: 2 })
   console.log(user) // will print { nickname: 'Alice', status: 'New' }
 }
-```
-
-
-Details see the spec files:
-- [sheet-db.spec.ts](./test/sheet-db.spec.ts)
-- [sheet-meta.spec.ts](./test/sheet-meta.spec.ts)
